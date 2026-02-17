@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: #f6f8ff;
+}
+
+body.active {
+  background-color: #141d2f;
+  color: white;
+}
+
+.github {
+  width: 800px;
+  height: 400px;
+  margin: 0px auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.dark {
+  display: flex;
+}
+.light {
+  display: none;
+}
+
+body.active .dark {
+  display: none;
+}
+body.active .light {
+  display: flex;
+}
+
+body.active .dark {
+  background-color: transparent;
+}
+body.active .light {
+  background-color: transparent;
+}
+
+.dark {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #f6f8ff;
+  font-size: 20px;
+  color: #697c9a;
+  letter-spacing: 2px;
+}
+.light {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #f6f8ff;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  display: none;
+}
+.section {
+  padding: 10px;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0px 16px 30px -10px #4660bb33;
+  margin-bottom: 50px;
+}
+body.active .section {
+  background-color: #1e2a47;
+  color: white;
+}
+.section i {
+  font-size: 30px;
+  color: #0079ff;
+}
+.section input {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #707f97;
+}
+body.active .section input {
+  background-color: #1e2a47;
+  color: white;
+}
+.section button {
+  cursor: pointer;
+  background-color: #0079ff;
+  border: none;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+body.active .section button {
+  color: white;
+}
+
+.cards {
+  /* background-color: #fefefe; */
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0px 16px 30px -110px #4660bb33;
+  border-radius: 10px;
+}
+body.active .cards {
+  background-color: #1e2a47;
+  color: white;
+}
+.cards .profilImg {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+body.active .cards .profilImg{
+  background-color: #1e2a47;
+
+}
+.cards .profilImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+.cards .info {
+  width: 80%;
+}
+body.active .cards .info {
+  background-color: #1e2a47;
+  color: white;
+}
+.cards .profilInfo {
+  padding: 10px 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.cards .profilInfo .url {
+  color: #0079ff;
+}
+
+.cards .profilInfo .sana {
+  color: #697c9a;
+}
+body.active .cards .profilInfo .sana {
+  color: white;
+}
+body.active .bio {
+  color: white;
+}
+.cards .bio {
+  padding: 10px 20px;
+  color: #707f97;
+  margin-bottom: 20px;
+}
+.cards .obunachi {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f8ff;
+  border-radius: 10px;
+}
+body.active .cards .obunachi {
+  background-color: #141d2f;
+  color: white;
+}
+.cards .obunachi p {
+  color: #707f97;
+}
+body.active .cards .obunachi p {
+  color: white;
+}
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+  font-size: 15px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+body.active .footer a {
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6b8fcf;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.footer a:hover {
+  color: #2d5aa3;
+}
+
+.footer i {
+  font-size: 18px;
+  color: #4f76b5;
+}
+body.active .footer i {
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .github {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .cards {
+    box-shadow: none;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards .profilImg {
+    width: 140px;
+    height: 140px;
+    padding: 0;
+  }
+
+  .cards .info {
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  .cards .profilInfo {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cards .obunachi {
+    padding: 15px;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .section {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .section input {
+    font-size: 16px;
+  }
+
+  .section button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  .footer {
+    gap: 12px;
+    font-size: 14px;
+  }
+}
