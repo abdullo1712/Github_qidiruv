@@ -283,7 +283,8 @@ body.active .footer i {
 
   .footer {
     padding: 10px;
-    text-align: leftgit ;
+    text-align: left ;
+    display: block;
     gap: 12px;
     font-size: 14px;
   }
