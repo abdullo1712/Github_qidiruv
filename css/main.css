@@ -236,8 +236,8 @@ body.active .footer i {
   }
 
   .cards {
+    padding: 10px;
     box-shadow: none;
-
     flex-direction: column;
     align-items: center;
     text-align: center;
