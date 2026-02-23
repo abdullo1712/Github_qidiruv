@@ -285,6 +285,7 @@ body.active .footer i {
     padding: 10px;
     text-align: left ;
     display: block;
+    /* align-items: start; */
     gap: 12px;
     font-size: 14px;
   }

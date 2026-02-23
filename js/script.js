@@ -60,7 +60,7 @@ const writeData = (item) => {
             </a>
 
             <a href=""><i class="fa-brands fa-twitter"></i>${item.twitter_username}</a>
-            <a href=""><i class="fa-solid fa-link"></i>${item.url}</a>
+            <a href="${item.html_url}"><i class="fa-solid fa-link"></i>${item.html_url}</a>
             <a href=""><i class="fa-solid fa-hospital"></i>${item.company}</a>
           </div>
         </div>
